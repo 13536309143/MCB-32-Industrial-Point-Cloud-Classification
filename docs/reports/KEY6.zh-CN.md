@@ -179,6 +179,8 @@ python scripts/build_publication.py
 
 重建公开图表不需要本地完整备份，但预测级核验需要原 NPZ。CSV 指标采用 0–1 比例，报告显示为百分数；分析轮次按 1 开始，原始 epoch 按 0 开始。准确的数据、划分指纹及环境信息在 `reports/key6/protocol/`。独立 GPU 重复运行可能因 CUDA 原子操作无法逐位相同。
 
+云端复制未携带 Git 目录，因此原环境中记录提交号的探测失败。另行按套件算法核对固定提交工作区的 **148 个源文件**，内容指纹与云端实验记录完全一致，证明见 [source_verification.json](../../reports/key6/protocol/source_verification.json)；保留原环境记录，不改写历史证据。
+
 本次六项结果来自单个训练种子，不能将九种相关表示或连续训练轮次伪装成多次独立训练来报告均值±标准差。ID 分离不能排除同系列近似 CAD 的相关性；跨表示测试也不是跨数据源泛化。S/B/L/XL 结构不仅参数量不同，因此不能将本比较解释为严格的单因素模型规模实验。
 
 参考来源：[MCB / ECCV 2020](https://github.com/stnoah1/mcb)、[PointNeXt / NeurIPS 2022](https://arxiv.org/abs/2206.04670)、[PointNet](https://arxiv.org/abs/1612.00593)、[PointNet++](https://arxiv.org/abs/1706.02413)。完整文献见 [references.bib](../references.bib)。数据权利与代码许可范围见[第三方声明](../../THIRD_PARTY_NOTICES.md)。

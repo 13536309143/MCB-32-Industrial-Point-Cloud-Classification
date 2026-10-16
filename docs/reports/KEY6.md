@@ -197,6 +197,8 @@ python scripts/build_publication.py
 
 It verifies the archive and recorded confusion-matrix metrics, then rebuilds six PNG/SVG figures using no GPU. Prediction-level checks require the separately retained NPZ backup. CSV metrics use 0–1 ratios; report percentages multiply by 100. Report epochs are one-based, while original epoch files use zero-based indices. Full training instructions and version pins are in the [English README](../../README.md).
 
+The cloud copy excluded Git metadata, so the original environment's upstream `git rev-parse` probes failed. Separately, all **148 files** covered by the suite's code-fingerprint algorithm in the pinned local source match the recorded cloud fingerprint exactly. This distinction is recorded in [source_verification.json](../../reports/key6/protocol/source_verification.json); the original environment evidence is not rewritten.
+
 An earlier S run exhausted file descriptors because each new validation loader retained persistent workers. The fix reuses persistent workers only for the training loader, releases validation/test workers and increases the process limit. A 50-cycle regression check remained stable; S resumed from its existing 118-epoch checkpoint. This operational recovery was not an additional independently trained seed.
 
 ## 11. Conclusions and prioritized follow-up

@@ -1,0 +1,19 @@
+{
+  "verified_source_files": 148,
+  "code_sha256": "25a044ed516e50d79356610b54e59b1beffe9167ef7b5bfd2f53ac638b491012",
+  "matches_recorded_cloud_fingerprint": true,
+  "algorithm": "experiments.mcb.suite.code_fingerprint",
+  "pointnext_commit": "b7ec10fd8b9acdb1c3b18e557f0d3465eb919164",
+  "openpoints_commit": "db31e0d94ede35bc672ef06d1b6e4073a9c269d5",
+  "selected_recorded_packages": {
+    "setuptools": "68.2.2",
+    "ninja": "1.11.1.4",
+    "torch": "2.7.1",
+    "scikit-learn": "1.2.2",
+    "easydict": "1.13",
+    "scipy": "1.11.4",
+    "numpy": "1.26.4",
+    "PyYAML": "6.0.1"
+  },
+  "note": "Cloud source upload excluded Git directories, so raw environment commit probes failed. The 148-file content fingerprint of the pinned local sources matches the recorded cloud fingerprint exactly."
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "index": 0,
+    "name": "bearing",
+    "original_train": 1064,
+    "original_test": 266,
+    "experiment_train": 958,
+    "experiment_val": 106
+  },
+  {
+    "index": 1,
+    "name": "bushing",
+    "original_train": 567,
+    "original_test": 142,
+    "experiment_train": 510,
+    "experiment_val": 57
+  },
+  {
+    "index": 2,
+    "name": "castors_and_wheels",
+    "original_train": 289,
+    "original_test": 72,
+    "experiment_train": 260,
+    "experiment_val": 29
+  },
+  {
+    "index": 3,
+    "name": "chain_drive",
+    "original_train": 78,
+    "original_test": 19,
+    "experiment_train": 70,
+    "experiment_val": 8
+  },
+  {
+    "index": 4,
+    "name": "clamp",
+    "original_train": 126,
+    "original_test": 31,
+    "experiment_train": 113,
+    "experiment_val": 13
+  },
+  {
+    "index": 5,
+    "name": "collar",
+    "original_train": 38,
+    "original_test": 10,
+    "experiment_train": 34,
+    "experiment_val": 4
+  },
+  {
+    "index": 6,
+    "name": "disc",
+    "original_train": 82,
+    "original_test": 21,
+    "experiment_train": 74,
+    "experiment_val": 8
+  },
+  {
+    "index": 7,
+    "name": "fitting",
+    "original_train": 1309,
+    "original_test": 327,
+    "experiment_train": 1178,
+    "experiment_val": 131
+  },
+  {
+    "index": 8,
+    "name": "flange",
+    "original_train": 5,
+    "original_test": 1,
+    "experiment_train": 4,
+    "experiment_val": 1
+  },
+  {
+    "index": 9,
+    "name": "gear",
+    "original_train": 386,
+    "original_test": 97,
+    "experiment_train": 347,
+    "experiment_val": 39
+  },
+  {
+    "index": 10,
+    "name": "handles",
+    "original_train": 1291,
+    "original_test": 323,
+    "experiment_train": 1162,
+    "experiment_val": 129
+  },
+  {
+    "index": 11,
+    "name": "hinge",
+    "original_train": 49,
+    "original_test": 12,
+    "experiment_train": 44,
+    "experiment_val": 5
+  },
+  {
+    "index": 12,
+    "name": "hook",
+    "original_train": 97,
+    "original_test": 24,
+    "experiment_train": 87,
+    "experiment_val": 10
+  },
+  {
+    "index": 13,
+    "name": "joint",
+    "original_train": 1342,
+    "original_test": 336,
+    "experiment_train": 1208,
+    "experiment_val": 134
+  },
+  {
+    "index": 14,
+    "name": "key_and_spline",
+    "original_train": 3408,
+    "original_test": 852,
+    "experiment_train": 3067,
+    "experiment_val": 341
+  },
+  {
+    "index": 15,
+    "name": "linear_guide",
+    "original_train": 39,
+    "original_test": 10,
+    "experiment_train": 35,
+    "experiment_val": 4
+  },
+  {
+    "index": 16,
+    "name": "motor",
+    "original_train": 594,
+    "original_test": 148,
+    "experiment_train": 535,
+    "experiment_val": 59
+  },
+  {
+    "index": 17,
+    "name": "nut",
+    "original_train": 1696,
+    "original_test": 424,
+    "experiment_train": 1526,
+    "experiment_val": 170
+  },
+  {
+    "index": 18,
+    "name": "pin",
+    "original_train": 5979,
+    "original_test": 1495,
+    "experiment_train": 5381,
+    "experiment_val": 598
+  },
+  {
+    "index": 19,
+    "name": "plate",
+    "original_train": 240,
+    "original_test": 60,
+    "experiment_train": 216,
+    "experiment_val": 24
+  },
+  {
+    "index": 20,
+    "name": "plug",
+    "original_train": 135,
+    "original_test": 34,
+    "experiment_train": 121,
+    "experiment_val": 14
+  },
+  {
+    "index": 21,
+    "name": "pulley",
+    "original_train": 245,
+    "original_test": 61,
+    "experiment_train": 221,
+    "experiment_val": 24
+  },
+  {
+    "index": 22,
+    "name": "ring",
+    "original_train": 711,
+    "original_test": 178,
+    "experiment_train": 640,
+    "experiment_val": 71
+  },
+  {
+    "index": 23,
+    "name": "rivet",
+    "original_train": 1854,
+    "original_test": 464,
+    "experiment_train": 1669,
+    "experiment_val": 185
+  },
+  {
+    "index": 24,
+    "name": "rotor",
+    "original_train": 375,
+    "original_test": 94,
+    "experiment_train": 337,
+    "experiment_val": 38
+  },
+  {
+    "index": 25,
+    "name": "screws_and_bolts",
+    "original_train": 13224,
+    "original_test": 3306,
+    "experiment_train": 11902,
+    "experiment_val": 1322
+  },
+  {
+    "index": 26,
+    "name": "spacer",
+    "original_train": 87,
+    "original_test": 22,
+    "experiment_train": 78,
+    "experiment_val": 9
+  },
+  {
+    "index": 27,
+    "name": "spring",
+    "original_train": 278,
+    "original_test": 69,
+    "experiment_train": 250,
+    "experiment_val": 28
+  },
+  {
+    "index": 28,
+    "name": "stud",
+    "original_train": 2542,
+    "original_test": 636,
+    "experiment_train": 2288,
+    "experiment_val": 254
+  },
+  {
+    "index": 29,
+    "name": "switch",
+    "original_train": 143,
+    "original_test": 36,
+    "experiment_train": 129,
+    "experiment_val": 14
+  },
+  {
+    "index": 30,
+    "name": "valve",
+    "original_train": 6,
+    "original_test": 1,
+    "experiment_train": 5,
+    "experiment_val": 1
+  },
+  {
+    "index": 31,
+    "name": "washer",
+    "original_train": 2145,
+    "original_test": 536,
+    "experiment_train": 1931,
+    "experiment_val": 214
+  }
+]

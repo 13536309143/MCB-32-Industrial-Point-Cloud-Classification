@@ -1,0 +1,46 @@
+{
+  "torch": "2.7.1+cu126",
+  "torch_cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "capability": [
+    8,
+    9
+  ],
+  "cuda_home": "/usr/local/cuda-12.6",
+  "source_sha256": {
+    "ball_query.cpp": "6d024274392c4fb96d7c4abb5506af127c80dbe93c43a18d96cc20118bc7bb90",
+    "ball_query_gpu.cu": "c8f4b27abd9ea23489764e441e5141ce18b4f572baf7ed900614fc6a2d56ed11",
+    "ball_query_gpu.h": "d5f2d88e599d6c947e4b876323f8ad356509bfdaa78852af9f247d59738df43c",
+    "cuda_utils.h": "7ace0019cea06178a57b275d3b1086b26cd5d0c83d646e8b8ae70c530e9e7bca",
+    "group_points.cpp": "cb2a441bfc640693c1a5d6cfbbbbc6ba7b5a08962f6647b86f7be6eb80710520",
+    "group_points_gpu.cu": "28c79c009da32c14e57d0e45345de92caffec7db31eefa853d971f148c4e2cbf",
+    "group_points_gpu.h": "e75f1a0eb6c18ed28b780daa3c6d82c5fccbf70e79d574f71bd469d5fa22eeaf",
+    "interpolate.cpp": "5eb8566a441494f43c7f0d3949905fcc4234e8da4e9e55e49bc2da064c17a6c4",
+    "interpolate_gpu.cu": "4e16680f4fdc95de527cb5093c42306b6eb67ae31c1cbd30b321c6ae62bc56d2",
+    "interpolate_gpu.h": "1d6c66ff03d32e3e7bc844f2599bb41c26bb8e2b97ebff60061f2ddf67d9f806",
+    "pointnet2_api.cpp": "1673a7041d21ee3c7f9979b2068a9b6055a99a284a6de640a0c2b1b81c112b95",
+    "sampling.cpp": "847fc019118bf79232e221d0e9d7cb7686187b5ace8fddbc259c6fc0d59cae45",
+    "sampling_gpu.cu": "5a898832473b159a35e12fa4c639435f37588ffc0a989229694da8d1568f76e5",
+    "sampling_gpu.h": "a116fef8b7ea61442c52ddc43282de2d7ccc5ba1fe4f432bdcbd1e1a07d7cf2f"
+  },
+  "pytorch_wheel_header_paths": [
+    "/root/enter/lib/python3.11/site-packages/nvidia/cublas/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cuda_cupti/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cuda_nvrtc/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cuda_runtime/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cudnn/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cufft/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cufile/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/curand/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cusolver/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/cusparse/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/nccl/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/nvjitlink/include",
+    "/root/enter/lib/python3.11/site-packages/nvidia/nvtx/include"
+  ],
+  "artifact_sha256": "e7b45a9a80b1e63e208d52c687f821f0bde15aaad69288c7071ec48f19477a85",
+  "adaptations": [
+    "Tensor.is_cuda(), Tensor.data_ptr()",
+    "MSVC /O2 flag on Windows"
+  ]
+}
