@@ -18,6 +18,8 @@
 
 每套原始 train/test 为 **40,424 / 10,107**；对应已完成实验的 train/val/test 为 **36,380 / 4,044 / 10,107**。共 454,779 个 NPY，逻辑字节数 **26,137,058,688（24.34 GiB）**。
 
+可选 OBJ 集合共 **50,531 个文件，8,909,142,490 字节（8.30 GiB）**；无损压缩为 **18 个 TAR.GZ 分片，2,654,025,959 字节（2.47 GiB）**。
+
 为了避免数十万个仓库条目，使用约 512 MiB 的无压缩 TAR 分片，保留原始 NPY 的字节和相对路径；TAR 头与补齐会增加一定体积。`release_manifest.json` 记录每片路径、大小、SHA-256、版本、原始划分及文件数，`SHA256SUMS` 另覆盖元数据与说明文档。本数据是 NumPy 文件集合，不是已经配置好的 `load_dataset()` 表格。
 
 ```text
@@ -29,6 +31,10 @@ metadata/experiment_splits.csv.gz
 metadata/file_manifest.csv.gz
 release_manifest.json
 SHA256SUMS
+meshes/<train-or-test>-<shard>.tar.gz
+mesh_release_manifest.json
+metadata/mesh_file_manifest.csv.gz
+conversion/
 ```
 
 归档内部保留：

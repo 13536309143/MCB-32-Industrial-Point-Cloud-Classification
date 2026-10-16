@@ -43,6 +43,8 @@ The same held-out gear is shown with a fixed camera and coordinate frame. This i
 | Point cloud files | 454,779 |
 | NPY payload bytes | 26,137,058,688 (24.34 GiB) |
 | Representations | Three methods ×three point counts |
+| Optional prepared OBJ meshes | 50,531 files; 8,909,142,490 bytes (8.30 GiB) |
+| Mesh download | 18 gzip TAR shards; 2,654,025,959 bytes (2.47 GiB) |
 
 Files are delivered as approximately 512 MiB **uncompressed TAR shards** to avoid hundreds of thousands of small Hub entries. Sharding preserves every NPY byte and path; TAR headers/padding add some overhead. `release_manifest.json` lists archive sizes, SHA-256 hashes, variant, original partition and file counts. `SHA256SUMS` also covers metadata and documentation. This is a file-based NumPy dataset, not a preconfigured Hugging Face `load_dataset()` table.
 

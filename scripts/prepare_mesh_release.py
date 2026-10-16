@@ -29,7 +29,7 @@ def main():
     a = p.parse_args()
     if a.shard_mib < 1: p.error('--shard-mib must be positive')
     index = json.loads((ROOT/'results/key6/_data/index.json').read_text())
-    expected = {str(Path(r['relative']).with_suffix('.obj')) for r in index['records']}
+    expected = {Path(r['relative']).with_suffix('.obj').as_posix() for r in index['records']}
     actual = {x.relative_to(a.source).as_posix() for x in a.source.rglob('*.obj')}
     if actual != expected: raise RuntimeError('OBJ IDs/classes/partitions do not match point clouds')
     out = a.output; out.mkdir(parents=True, exist_ok=True)
@@ -80,6 +80,7 @@ def main():
     shutil.copytree(ROOT/'data/_pointcloud_converter',conversion/'_pointcloud_converter',ignore=shutil.ignore_patterns('__pycache__','*.pyc'),dirs_exist_ok=True)
     shutil.copy2(ROOT/'data/README.md',conversion/'README.zh-CN.md')
     shutil.copy2(ROOT/'huggingface/CONVERSION.md',conversion/'README.md')
+    shutil.copy2(ROOT/'LICENSE',conversion/'LICENSE')
     manifest = dict(format_version=1,format='deterministic gzip-compressed USTAR; original OBJ bytes',obj_files=len(expected),classes=len(index['classes']),obj_logical_bytes=total_bytes,paired_pointcloud_data_sha256=index['data_sha256'],archives=archives)
     manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
     print(f'Mesh release ready: {len(expected):,} meshes, {len(archives)} shards',flush=True)

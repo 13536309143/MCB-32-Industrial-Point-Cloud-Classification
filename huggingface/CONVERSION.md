@@ -2,7 +2,7 @@
 
 The optional `meshes/` archives preserve all 50,531 prepared OBJ files, paired with the point clouds by original partition, class and model ID. They restore `MCB_merged/train/<class>/<id>.obj` and `MCB_merged/test/<class>/<id>.obj`. The meshes are already normalized; they are the prepared conversion inputs, not the unprocessed upstream A/B download. `metadata/mesh_file_manifest.csv.gz` records every original OBJ SHA-256.
 
-The complete experiment repository is https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification . Its `data/convert_mcb_9sets.bat` and `data/_pointcloud_converter/` are also mirrored in this `conversion/` directory. Source CAD rights remain subject to the notices at the dataset root.
+The complete experiment repository is https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification . Its `data/convert_mcb_9sets.bat` and `data/_pointcloud_converter/` are also mirrored in this `conversion/` directory. The conversion software license is provided in `conversion/LICENSE`; it applies to the software, not the dataset. Source CAD rights remain subject to the notices at the dataset root.
 
 Download meshes with `python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --meshes-only --output data` from a clone of the experiment repository. To download both point clouds and meshes, use `--include-meshes` instead. Add `--revision <dataset-commit>` for reproducibility.
 

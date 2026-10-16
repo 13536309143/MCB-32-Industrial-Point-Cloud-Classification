@@ -1,0 +1,136 @@
+{
+  "format_version": 1,
+  "format": "deterministic gzip-compressed USTAR; original OBJ bytes",
+  "obj_files": 50531,
+  "classes": 32,
+  "obj_logical_bytes": 8909142490,
+  "paired_pointcloud_data_sha256": "d559319612d13f3339483c73efcf96e03d1bd45c46a73c6a8a8e886f0d364f8b",
+  "archives": [
+    {
+      "path": "meshes/train-00000.tar.gz",
+      "bytes": 142515904,
+      "sha256": "d243a888f16740220e8907eac8a86161aa48b541b11a08026dfd1eac8e2f9769",
+      "files": 417,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00001.tar.gz",
+      "bytes": 139662622,
+      "sha256": "97f18a1f6022964f74dc9d00639f5861fa324733f53ab7cab3e80101fe77e6f9",
+      "files": 392,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00002.tar.gz",
+      "bytes": 149304735,
+      "sha256": "b8c9449cd7304f75581a7d6741ed04b7f9613313906c45ced1d992924fe35085",
+      "files": 939,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00003.tar.gz",
+      "bytes": 161690151,
+      "sha256": "575e0862407befc353f8bf786bd21de1b8764a2e6d66af92f2b156ff188f900f",
+      "files": 1078,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00004.tar.gz",
+      "bytes": 155997439,
+      "sha256": "6d4b7636aa222ef6d5ca186320b12f9584e87d8f82b414c22285b3fcc1f7bc5b",
+      "files": 2478,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00005.tar.gz",
+      "bytes": 152825862,
+      "sha256": "6935b2e4d971f4f6dd5fcdc6c3a0d5769e3a512c9917e684b3af824a54b3f85d",
+      "files": 5267,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00006.tar.gz",
+      "bytes": 153372171,
+      "sha256": "2bafd68d073f174fa4be886cc84b356a4213cf13f8806e9fd6a2d38aa270dc18",
+      "files": 7995,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00007.tar.gz",
+      "bytes": 148752045,
+      "sha256": "9e4566eed035face2804d0372962d2a52c81729b7a7b59b816f77137a786dd61",
+      "files": 3134,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00008.tar.gz",
+      "bytes": 177326300,
+      "sha256": "16803e5a1693ffc52e2fb50a0e5c22afbbebfa89505d0b46d76513b1318d0e38",
+      "files": 278,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00009.tar.gz",
+      "bytes": 155379600,
+      "sha256": "9f0fd44b4b35ee8a6061abba2142e3bae62f703dc7a69b59cfe0a3243b09315e",
+      "files": 5917,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00010.tar.gz",
+      "bytes": 147401983,
+      "sha256": "254a3d96d67fb1afbf49e15ce89acf9475c30454fa4b900443c18477bfc4bd9c",
+      "files": 6843,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00011.tar.gz",
+      "bytes": 188255910,
+      "sha256": "97777b2da8557ee194e93b51f51f42220b7da258cdacf59d34584ca9c823dbc4",
+      "files": 721,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00012.tar.gz",
+      "bytes": 200421591,
+      "sha256": "8901edf4a88e993cd877cfcf5110aefea769f22dfeed89ce2ce4f138711650a7",
+      "files": 111,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/train-00013.tar.gz",
+      "bytes": 74647718,
+      "sha256": "bb32d2d64d562668acad1ef251671f1684ea8fc76c613db75b7fccadaa11c4e2",
+      "files": 4854,
+      "original_split": "train"
+    },
+    {
+      "path": "meshes/test-00000.tar.gz",
+      "bytes": 144878459,
+      "sha256": "ba7eea5d54e794d7825c976a1f6c9787e019e0fbe27239ad551099fca2c9f7d7",
+      "files": 679,
+      "original_split": "test"
+    },
+    {
+      "path": "meshes/test-00001.tar.gz",
+      "bytes": 151281867,
+      "sha256": "ad38b0057feb9fe5acfdf9ecd832f60495fa7845509b8d0bfabd99b8266bde25",
+      "files": 4767,
+      "original_split": "test"
+    },
+    {
+      "path": "meshes/test-00002.tar.gz",
+      "bytes": 172005333,
+      "sha256": "3f5c0a708391b6c7fe1f169f249e84e74321cd1d6380ed32347fe43a412835e1",
+      "files": 3436,
+      "original_split": "test"
+    },
+    {
+      "path": "meshes/test-00003.tar.gz",
+      "bytes": 38306269,
+      "sha256": "6643d50edc1f9e8f7423e1449f83998aac576397e5fd48a42ff18c7d6476d01b",
+      "files": 1225,
+      "original_split": "test"
+    }
+  ]
+}
