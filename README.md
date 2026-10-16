@@ -47,6 +47,11 @@ These are nine views of the **same objects**, not 454,779 independent examples. 
 
 The Hugging Face release is prepared as checksummed TAR shards to preserve the original NPY files without creating hundreds of thousands of repository entries. The [dataset card](huggingface/README.md) documents the exact sampling implementation, all 32 classes, layout and licensing scope. Dataset repository: [GeorgeWJJ/PointNext](https://huggingface.co/datasets/GeorgeWJJ/PointNext). Archive availability and content hashes are recorded in its release manifest.
 
+```bash
+python -m pip install huggingface_hub numpy
+python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
+```
+
 ```text
 data/MCB_pointcloud/
   area_random_2048/  area_random_4096/  area_random_8192/

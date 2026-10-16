@@ -168,7 +168,7 @@ Complete per-class support/precision/recall/F1 is in [per_class_clean.csv](../..
 
 ## 9. Paired comparison and uncertainty
 
-We compare S with each other checkpoint on the same object identities using a two-sided **exact McNemar test** on correctness. Holm correction controls the family of five clean-OA comparisons.
+We compare S with each other checkpoint on the same object identities using a two-sided **exact McNemar test** on correctness. Holm adjustment is applied across the five displayed clean-OA comparisons. This is a post-hoc descriptive analysis with S as the observed clean-set winner, not a preregistered confirmatory test; the adjusted values do not guarantee error control for all possible data-dependent model comparisons.
 
 | S vs. | Only S correct | Only other correct | OA difference, pp | Exact p | Holm p |
 | --- | --- | --- | --- | --- | --- |

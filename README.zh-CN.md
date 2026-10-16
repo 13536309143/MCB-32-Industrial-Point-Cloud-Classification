@@ -47,6 +47,11 @@
 
 Hugging Face 发布准备采用带校验和的 TAR 分片，保留原始 NPY 字节，避免创建数十万个仓库条目。[数据卡](huggingface/README.zh-CN.md)说明类别、采样算法、文件结构和许可范围。目标数据仓库为 [GeorgeWJJ/PointNext](https://huggingface.co/datasets/GeorgeWJJ/PointNext)，分片可用性和哈希以仓库发布清单为准。
 
+```bash
+python -m pip install huggingface_hub numpy
+python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
+```
+
 ```text
 data/MCB_pointcloud/
   area_random_2048/  area_random_4096/  area_random_8192/
