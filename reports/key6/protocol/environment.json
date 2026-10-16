@@ -1,0 +1,15 @@
+{
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+  "torch": "2.7.1+cu126",
+  "torch_cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "capability": [
+    8,
+    9
+  ],
+  "gpu_total_memory_bytes": 12585926656,
+  "pointnext_commit": "Command '['git', '-C', '/root/point/PointNeXt', 'rev-parse', 'HEAD']' returned non-zero exit status 128.",
+  "openpoints_commit": "Command '['git', '-C', '/root/point/PointNeXt/openpoints', 'rev-parse', 'HEAD']' returned non-zero exit status 128.",
+  "code_sha256": "25a044ed516e50d79356610b54e59b1beffe9167ef7b5bfd2f53ac638b491012"
+}

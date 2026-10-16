@@ -1,0 +1,107 @@
+{
+  "verified_local_date": "2026-10-14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.12.15",
+  "torch": "2.8.0",
+  "numpy": "2.5.4",
+  "cuda_available": false,
+  "tests": {
+    "command": "python -m pytest -q experiments/tests",
+    "passed": 14,
+    "last_duration_s": 104.83,
+    "includes": [
+      "six complete architectures forward/backward",
+      "full fixture validation and identity split",
+      "known confusion matrix metrics",
+      "all corruption reproducibility",
+      "two-worker persistent loading and exact interrupted-vs-continuous CPU resume",
+      "sequential subprocess suite, local packing, skip, and corrupted prediction repair"
+    ]
+  },
+  "extra_checks": [
+    "PointNeXt S/B/L/XL max_avg heads, radius/neighbor ablations, focal and weighted CE",
+    "All three saved plans match the generator",
+    "Bash syntax passed"
+  ],
+  "data_reference": {
+    "data_sha256": "d559319612d13f3339483c73efcf96e03d1bd45c46a73c6a8a8e886f0d364f8b",
+    "split_sha256": "a1f4dbb8bf7a612d7e9b76688a116cf97b03b2c3fce890e0e83c7e29676f2a27",
+    "classes": [
+      "bearing",
+      "bushing",
+      "castors_and_wheels",
+      "chain_drive",
+      "clamp",
+      "collar",
+      "disc",
+      "fitting",
+      "flange",
+      "gear",
+      "handles",
+      "hinge",
+      "hook",
+      "joint",
+      "key_and_spline",
+      "linear_guide",
+      "motor",
+      "nut",
+      "pin",
+      "plate",
+      "plug",
+      "pulley",
+      "ring",
+      "rivet",
+      "rotor",
+      "screws_and_bolts",
+      "spacer",
+      "spring",
+      "stud",
+      "switch",
+      "valve",
+      "washer"
+    ],
+    "checked_files": 454779,
+    "models": 50531,
+    "split_counts": {
+      "train": 36380,
+      "val": 4044,
+      "test": 10107
+    },
+    "split_seed": 20261013,
+    "val_fraction": 0.1,
+    "identity_sha256": "a309b1c0f55c40ff40bc7502b58933bd0f2651df67c427daac6cfb90f65b25d8"
+  },
+  "base_model_parameters": {
+    "pointnext_s": 1371456,
+    "pointnext_b": 3879200,
+    "pointnext_l": 7176416,
+    "pointnext_xl": 40839968,
+    "pointnet": 3477225,
+    "pointnet2": 1470496
+  },
+  "source": {
+    "pointnext_commit": "b7ec10fd8b9acdb1c3b18e557f0d3465eb919164",
+    "openpoints_commit": "db31e0d94ede35bc672ef06d1b6e4073a9c269d5",
+    "both_complete_history": true,
+    "upstream_worktrees_unmodified": true,
+    "experiment_code_sha256": "19f831542c3555aeb0dbdf347a6fdba4a37ced0c29c79e31cd9847db47a650e6"
+  },
+  "not_executed": [
+    "Windows BAT/PowerShell/WSL installation",
+    "NVIDIA CUDA extension compilation",
+    "RTX 4090 training and performance evaluation"
+  ],
+  "cloud_validation_2026_10_14": {
+    "gpu": "NVIDIA RTX 4070 12 GB",
+    "python": "3.11.7",
+    "torch": "2.7.1+cu126",
+    "cuda_compiler": "12.6.85",
+    "all_six_model_fp32_bf16_forward_backward": "passed",
+    "official_cuda_ops_build": "passed",
+    "first_dataset_sha256_files_verified": 50531,
+    "first_full_training_epoch": "completed",
+    "current_cpu_regression": "13 passed; persistent-worker resume test previously passed; no worker-order changes in this update",
+    "pointcloud_upload": "in progress; background handoff scheduled",
+    "cuda_source_algorithms": "unchanged"
+  }
+}

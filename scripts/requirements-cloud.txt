@@ -1,0 +1,8 @@
+# Runtime versions recorded in the completed Linux/RTX 4070 experiment.
+# Install torch==2.7.1 separately from https://download.pytorch.org/whl/cu126.
+numpy==1.26.4
+scipy==1.11.4
+scikit-learn==1.2.2
+PyYAML==6.0.1
+easydict==1.13
+ninja==1.11.1.4

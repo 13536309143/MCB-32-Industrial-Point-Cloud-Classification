@@ -1,0 +1,1167 @@
+{
+  "verified_at": "2026-10-16T11:26:40.207706+08:00",
+  "remote_manifest_files": 2283,
+  "remote_manifest_bytes": 1413216937,
+  "sha256_mismatches": [],
+  "runs": 6,
+  "epochs": 1800,
+  "test_cases": 192,
+  "samples_per_test": 10107,
+  "checked_predictions": 1940544,
+  "all_prediction_metrics_match": true,
+  "all_test_ids_and_labels_match": true,
+  "checks": [
+    {
+      "model": "PointNeXt-S",
+      "case": "clean",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_area_random_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_area_random_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_fps_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_fps_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_fps_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_poisson_disk_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_poisson_disk_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "cross_poisson_disk_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "jitter_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "jitter_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "jitter_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "rotation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "rotation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "rotation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "scale_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "scale_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "scale_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "translation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "translation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "translation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "dropout_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "dropout_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "dropout_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "outliers_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "outliers_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "outliers_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "occlusion_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "occlusion_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "occlusion_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "permutation",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-S",
+      "case": "so3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "clean",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_area_random_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_area_random_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_fps_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_fps_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_fps_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_poisson_disk_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_poisson_disk_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "cross_poisson_disk_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "jitter_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "jitter_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "jitter_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "rotation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "rotation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "rotation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "scale_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "scale_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "scale_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "translation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "translation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "translation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "dropout_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "dropout_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "dropout_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "outliers_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "outliers_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "outliers_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "occlusion_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "occlusion_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "occlusion_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "permutation",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-B",
+      "case": "so3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "clean",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_area_random_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_area_random_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_fps_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_fps_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_fps_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_poisson_disk_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_poisson_disk_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "cross_poisson_disk_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "jitter_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "jitter_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "jitter_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "rotation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "rotation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "rotation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "scale_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "scale_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "scale_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "translation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "translation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "translation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "dropout_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "dropout_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "dropout_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "outliers_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "outliers_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "outliers_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "occlusion_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "occlusion_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "occlusion_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "permutation",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-L",
+      "case": "so3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "clean",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_area_random_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_area_random_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_fps_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_fps_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_fps_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_poisson_disk_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_poisson_disk_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "cross_poisson_disk_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "jitter_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "jitter_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "jitter_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "rotation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "rotation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "rotation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "scale_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "scale_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "scale_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "translation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "translation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "translation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "dropout_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "dropout_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "dropout_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "outliers_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "outliers_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "outliers_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "occlusion_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "occlusion_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "occlusion_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "permutation",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNeXt-XL",
+      "case": "so3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "clean",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_area_random_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_area_random_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_fps_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_fps_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_fps_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_poisson_disk_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_poisson_disk_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "cross_poisson_disk_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "jitter_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "jitter_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "jitter_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "rotation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "rotation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "rotation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "scale_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "scale_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "scale_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "translation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "translation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "translation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "dropout_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "dropout_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "dropout_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "outliers_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "outliers_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "outliers_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "occlusion_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "occlusion_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "occlusion_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "permutation",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet",
+      "case": "so3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "clean",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_area_random_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_area_random_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_fps_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_fps_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_fps_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_poisson_disk_2048",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_poisson_disk_4096",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "cross_poisson_disk_8192",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "jitter_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "jitter_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "jitter_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "rotation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "rotation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "rotation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "scale_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "scale_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "scale_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "translation_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "translation_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "translation_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "dropout_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "dropout_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "dropout_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "outliers_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "outliers_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "outliers_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "occlusion_1",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "occlusion_2",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "occlusion_3",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "permutation",
+      "passed": true,
+      "samples": 10107
+    },
+    {
+      "model": "PointNet++",
+      "case": "so3",
+      "passed": true,
+      "samples": 10107
+    }
+  ]
+}

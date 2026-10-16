@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this experiment and the original MCB, PointNeXt, PointNet and PointNet++ papers when reusing this work."
+title: "MCB-32: Reproducible Industrial Point Cloud Classification with PointNeXt"
+type: software
+authors:
+  - name: "13536309143"
+repository-code: "https://github.com/13536309143/pointnext"
+url: "https://huggingface.co/datasets/GeorgeWJJ/PointNext"
+license: MIT
+date-released: 2026-10-16
+version: "0.1.0"
+abstract: >-
+  A single-seed industrial CAD point cloud classification experiment comparing
+  PointNeXt-S/B/L/XL, PointNet and PointNet++ on a reorganized 32-class MCB
+  collection, with nine paired sampling/resolution representations and 192
+  recorded evaluations. The software license does not relicense source CAD data.

@@ -1,0 +1,3 @@
+[submodule "PointNeXt"]
+	path = PointNeXt
+	url = https://github.com/guochengqian/PointNeXt.git

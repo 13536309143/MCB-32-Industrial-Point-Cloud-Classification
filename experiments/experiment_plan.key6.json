@@ -1,0 +1,1377 @@
+{
+  "version": "mcb-experiments-v1",
+  "profile": "key6",
+  "summary": {
+    "training_runs": 6,
+    "evaluation_jobs": 192,
+    "groups": {
+      "key6": 6
+    },
+    "total_training_epochs": 1800
+  },
+  "runs": [
+    {
+      "id": "pointnext_s__area_random_2048__s42__648d97b274ce",
+      "group": "key6",
+      "config": {
+        "epochs": 300,
+        "lr": 0.001,
+        "weight_decay": 0.05,
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "warmup_epochs": 10,
+        "min_lr": 1e-06,
+        "effective_batch": 32,
+        "micro_batch": 0,
+        "label_smoothing": 0.1,
+        "loss": "ce",
+        "dropout": 0.5,
+        "augmentation": "standard",
+        "radius": 0.15,
+        "nsample": 32,
+        "pool": "max",
+        "grad_clip": 1.0,
+        "train_fraction": 1.0,
+        "amp": true,
+        "amp_dtype": "auto",
+        "workers": 4,
+        "val_fraction": 0.1,
+        "split_seed": 20261013,
+        "deterministic": false,
+        "model": "pointnext_s",
+        "dataset": "area_random_2048",
+        "seed": 42
+      },
+      "evaluations": [
+        {
+          "name": "clean",
+          "dataset": "area_random_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_4096",
+          "dataset": "area_random_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_8192",
+          "dataset": "area_random_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_2048",
+          "dataset": "fps_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_4096",
+          "dataset": "fps_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_8192",
+          "dataset": "fps_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_2048",
+          "dataset": "poisson_disk_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_4096",
+          "dataset": "poisson_disk_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_8192",
+          "dataset": "poisson_disk_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "jitter_1",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 1
+        },
+        {
+          "name": "jitter_2",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 2
+        },
+        {
+          "name": "jitter_3",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 3
+        },
+        {
+          "name": "rotation_1",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 1
+        },
+        {
+          "name": "rotation_2",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 2
+        },
+        {
+          "name": "rotation_3",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 3
+        },
+        {
+          "name": "scale_1",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 1
+        },
+        {
+          "name": "scale_2",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 2
+        },
+        {
+          "name": "scale_3",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 3
+        },
+        {
+          "name": "translation_1",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 1
+        },
+        {
+          "name": "translation_2",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 2
+        },
+        {
+          "name": "translation_3",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 3
+        },
+        {
+          "name": "dropout_1",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 1
+        },
+        {
+          "name": "dropout_2",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 2
+        },
+        {
+          "name": "dropout_3",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 3
+        },
+        {
+          "name": "outliers_1",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 1
+        },
+        {
+          "name": "outliers_2",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 2
+        },
+        {
+          "name": "outliers_3",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 3
+        },
+        {
+          "name": "occlusion_1",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 1
+        },
+        {
+          "name": "occlusion_2",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 2
+        },
+        {
+          "name": "occlusion_3",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 3
+        },
+        {
+          "name": "permutation",
+          "dataset": "area_random_2048",
+          "corruption": "permutation",
+          "severity": 1
+        },
+        {
+          "name": "so3",
+          "dataset": "area_random_2048",
+          "corruption": "so3",
+          "severity": 1
+        }
+      ]
+    },
+    {
+      "id": "pointnext_b__area_random_2048__s42__c1b6ddf714cb",
+      "group": "key6",
+      "config": {
+        "epochs": 300,
+        "lr": 0.001,
+        "weight_decay": 0.05,
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "warmup_epochs": 10,
+        "min_lr": 1e-06,
+        "effective_batch": 32,
+        "micro_batch": 0,
+        "label_smoothing": 0.1,
+        "loss": "ce",
+        "dropout": 0.5,
+        "augmentation": "standard",
+        "radius": 0.15,
+        "nsample": 32,
+        "pool": "max",
+        "grad_clip": 1.0,
+        "train_fraction": 1.0,
+        "amp": true,
+        "amp_dtype": "auto",
+        "workers": 4,
+        "val_fraction": 0.1,
+        "split_seed": 20261013,
+        "deterministic": false,
+        "model": "pointnext_b",
+        "dataset": "area_random_2048",
+        "seed": 42
+      },
+      "evaluations": [
+        {
+          "name": "clean",
+          "dataset": "area_random_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_4096",
+          "dataset": "area_random_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_8192",
+          "dataset": "area_random_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_2048",
+          "dataset": "fps_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_4096",
+          "dataset": "fps_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_8192",
+          "dataset": "fps_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_2048",
+          "dataset": "poisson_disk_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_4096",
+          "dataset": "poisson_disk_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_8192",
+          "dataset": "poisson_disk_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "jitter_1",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 1
+        },
+        {
+          "name": "jitter_2",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 2
+        },
+        {
+          "name": "jitter_3",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 3
+        },
+        {
+          "name": "rotation_1",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 1
+        },
+        {
+          "name": "rotation_2",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 2
+        },
+        {
+          "name": "rotation_3",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 3
+        },
+        {
+          "name": "scale_1",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 1
+        },
+        {
+          "name": "scale_2",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 2
+        },
+        {
+          "name": "scale_3",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 3
+        },
+        {
+          "name": "translation_1",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 1
+        },
+        {
+          "name": "translation_2",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 2
+        },
+        {
+          "name": "translation_3",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 3
+        },
+        {
+          "name": "dropout_1",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 1
+        },
+        {
+          "name": "dropout_2",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 2
+        },
+        {
+          "name": "dropout_3",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 3
+        },
+        {
+          "name": "outliers_1",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 1
+        },
+        {
+          "name": "outliers_2",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 2
+        },
+        {
+          "name": "outliers_3",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 3
+        },
+        {
+          "name": "occlusion_1",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 1
+        },
+        {
+          "name": "occlusion_2",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 2
+        },
+        {
+          "name": "occlusion_3",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 3
+        },
+        {
+          "name": "permutation",
+          "dataset": "area_random_2048",
+          "corruption": "permutation",
+          "severity": 1
+        },
+        {
+          "name": "so3",
+          "dataset": "area_random_2048",
+          "corruption": "so3",
+          "severity": 1
+        }
+      ]
+    },
+    {
+      "id": "pointnext_l__area_random_2048__s42__e49d5a949fb1",
+      "group": "key6",
+      "config": {
+        "epochs": 300,
+        "lr": 0.001,
+        "weight_decay": 0.05,
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "warmup_epochs": 10,
+        "min_lr": 1e-06,
+        "effective_batch": 32,
+        "micro_batch": 0,
+        "label_smoothing": 0.1,
+        "loss": "ce",
+        "dropout": 0.5,
+        "augmentation": "standard",
+        "radius": 0.15,
+        "nsample": 32,
+        "pool": "max",
+        "grad_clip": 1.0,
+        "train_fraction": 1.0,
+        "amp": true,
+        "amp_dtype": "auto",
+        "workers": 4,
+        "val_fraction": 0.1,
+        "split_seed": 20261013,
+        "deterministic": false,
+        "model": "pointnext_l",
+        "dataset": "area_random_2048",
+        "seed": 42
+      },
+      "evaluations": [
+        {
+          "name": "clean",
+          "dataset": "area_random_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_4096",
+          "dataset": "area_random_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_8192",
+          "dataset": "area_random_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_2048",
+          "dataset": "fps_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_4096",
+          "dataset": "fps_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_8192",
+          "dataset": "fps_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_2048",
+          "dataset": "poisson_disk_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_4096",
+          "dataset": "poisson_disk_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_8192",
+          "dataset": "poisson_disk_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "jitter_1",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 1
+        },
+        {
+          "name": "jitter_2",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 2
+        },
+        {
+          "name": "jitter_3",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 3
+        },
+        {
+          "name": "rotation_1",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 1
+        },
+        {
+          "name": "rotation_2",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 2
+        },
+        {
+          "name": "rotation_3",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 3
+        },
+        {
+          "name": "scale_1",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 1
+        },
+        {
+          "name": "scale_2",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 2
+        },
+        {
+          "name": "scale_3",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 3
+        },
+        {
+          "name": "translation_1",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 1
+        },
+        {
+          "name": "translation_2",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 2
+        },
+        {
+          "name": "translation_3",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 3
+        },
+        {
+          "name": "dropout_1",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 1
+        },
+        {
+          "name": "dropout_2",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 2
+        },
+        {
+          "name": "dropout_3",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 3
+        },
+        {
+          "name": "outliers_1",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 1
+        },
+        {
+          "name": "outliers_2",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 2
+        },
+        {
+          "name": "outliers_3",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 3
+        },
+        {
+          "name": "occlusion_1",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 1
+        },
+        {
+          "name": "occlusion_2",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 2
+        },
+        {
+          "name": "occlusion_3",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 3
+        },
+        {
+          "name": "permutation",
+          "dataset": "area_random_2048",
+          "corruption": "permutation",
+          "severity": 1
+        },
+        {
+          "name": "so3",
+          "dataset": "area_random_2048",
+          "corruption": "so3",
+          "severity": 1
+        }
+      ]
+    },
+    {
+      "id": "pointnext_xl__area_random_2048__s42__f939df8f0e18",
+      "group": "key6",
+      "config": {
+        "epochs": 300,
+        "lr": 0.001,
+        "weight_decay": 0.05,
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "warmup_epochs": 10,
+        "min_lr": 1e-06,
+        "effective_batch": 32,
+        "micro_batch": 0,
+        "label_smoothing": 0.1,
+        "loss": "ce",
+        "dropout": 0.5,
+        "augmentation": "standard",
+        "radius": 0.15,
+        "nsample": 32,
+        "pool": "max",
+        "grad_clip": 1.0,
+        "train_fraction": 1.0,
+        "amp": true,
+        "amp_dtype": "auto",
+        "workers": 4,
+        "val_fraction": 0.1,
+        "split_seed": 20261013,
+        "deterministic": false,
+        "model": "pointnext_xl",
+        "dataset": "area_random_2048",
+        "seed": 42
+      },
+      "evaluations": [
+        {
+          "name": "clean",
+          "dataset": "area_random_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_4096",
+          "dataset": "area_random_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_8192",
+          "dataset": "area_random_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_2048",
+          "dataset": "fps_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_4096",
+          "dataset": "fps_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_8192",
+          "dataset": "fps_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_2048",
+          "dataset": "poisson_disk_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_4096",
+          "dataset": "poisson_disk_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_8192",
+          "dataset": "poisson_disk_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "jitter_1",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 1
+        },
+        {
+          "name": "jitter_2",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 2
+        },
+        {
+          "name": "jitter_3",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 3
+        },
+        {
+          "name": "rotation_1",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 1
+        },
+        {
+          "name": "rotation_2",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 2
+        },
+        {
+          "name": "rotation_3",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 3
+        },
+        {
+          "name": "scale_1",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 1
+        },
+        {
+          "name": "scale_2",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 2
+        },
+        {
+          "name": "scale_3",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 3
+        },
+        {
+          "name": "translation_1",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 1
+        },
+        {
+          "name": "translation_2",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 2
+        },
+        {
+          "name": "translation_3",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 3
+        },
+        {
+          "name": "dropout_1",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 1
+        },
+        {
+          "name": "dropout_2",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 2
+        },
+        {
+          "name": "dropout_3",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 3
+        },
+        {
+          "name": "outliers_1",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 1
+        },
+        {
+          "name": "outliers_2",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 2
+        },
+        {
+          "name": "outliers_3",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 3
+        },
+        {
+          "name": "occlusion_1",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 1
+        },
+        {
+          "name": "occlusion_2",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 2
+        },
+        {
+          "name": "occlusion_3",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 3
+        },
+        {
+          "name": "permutation",
+          "dataset": "area_random_2048",
+          "corruption": "permutation",
+          "severity": 1
+        },
+        {
+          "name": "so3",
+          "dataset": "area_random_2048",
+          "corruption": "so3",
+          "severity": 1
+        }
+      ]
+    },
+    {
+      "id": "pointnet__area_random_2048__s42__626bf073cb4d",
+      "group": "key6",
+      "config": {
+        "epochs": 300,
+        "lr": 0.001,
+        "weight_decay": 0.05,
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "warmup_epochs": 10,
+        "min_lr": 1e-06,
+        "effective_batch": 32,
+        "micro_batch": 0,
+        "label_smoothing": 0.1,
+        "loss": "ce",
+        "dropout": 0.5,
+        "augmentation": "standard",
+        "radius": 0.15,
+        "nsample": 32,
+        "pool": "max",
+        "grad_clip": 1.0,
+        "train_fraction": 1.0,
+        "amp": true,
+        "amp_dtype": "auto",
+        "workers": 4,
+        "val_fraction": 0.1,
+        "split_seed": 20261013,
+        "deterministic": false,
+        "model": "pointnet",
+        "dataset": "area_random_2048",
+        "seed": 42
+      },
+      "evaluations": [
+        {
+          "name": "clean",
+          "dataset": "area_random_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_4096",
+          "dataset": "area_random_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_8192",
+          "dataset": "area_random_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_2048",
+          "dataset": "fps_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_4096",
+          "dataset": "fps_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_8192",
+          "dataset": "fps_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_2048",
+          "dataset": "poisson_disk_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_4096",
+          "dataset": "poisson_disk_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_8192",
+          "dataset": "poisson_disk_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "jitter_1",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 1
+        },
+        {
+          "name": "jitter_2",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 2
+        },
+        {
+          "name": "jitter_3",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 3
+        },
+        {
+          "name": "rotation_1",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 1
+        },
+        {
+          "name": "rotation_2",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 2
+        },
+        {
+          "name": "rotation_3",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 3
+        },
+        {
+          "name": "scale_1",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 1
+        },
+        {
+          "name": "scale_2",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 2
+        },
+        {
+          "name": "scale_3",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 3
+        },
+        {
+          "name": "translation_1",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 1
+        },
+        {
+          "name": "translation_2",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 2
+        },
+        {
+          "name": "translation_3",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 3
+        },
+        {
+          "name": "dropout_1",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 1
+        },
+        {
+          "name": "dropout_2",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 2
+        },
+        {
+          "name": "dropout_3",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 3
+        },
+        {
+          "name": "outliers_1",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 1
+        },
+        {
+          "name": "outliers_2",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 2
+        },
+        {
+          "name": "outliers_3",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 3
+        },
+        {
+          "name": "occlusion_1",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 1
+        },
+        {
+          "name": "occlusion_2",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 2
+        },
+        {
+          "name": "occlusion_3",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 3
+        },
+        {
+          "name": "permutation",
+          "dataset": "area_random_2048",
+          "corruption": "permutation",
+          "severity": 1
+        },
+        {
+          "name": "so3",
+          "dataset": "area_random_2048",
+          "corruption": "so3",
+          "severity": 1
+        }
+      ]
+    },
+    {
+      "id": "pointnet2__area_random_2048__s42__85e1a9b5a994",
+      "group": "key6",
+      "config": {
+        "epochs": 300,
+        "lr": 0.001,
+        "weight_decay": 0.05,
+        "optimizer": "adamw",
+        "scheduler": "cosine",
+        "warmup_epochs": 10,
+        "min_lr": 1e-06,
+        "effective_batch": 32,
+        "micro_batch": 0,
+        "label_smoothing": 0.1,
+        "loss": "ce",
+        "dropout": 0.5,
+        "augmentation": "standard",
+        "radius": 0.15,
+        "nsample": 32,
+        "pool": "max",
+        "grad_clip": 1.0,
+        "train_fraction": 1.0,
+        "amp": true,
+        "amp_dtype": "auto",
+        "workers": 4,
+        "val_fraction": 0.1,
+        "split_seed": 20261013,
+        "deterministic": false,
+        "model": "pointnet2",
+        "dataset": "area_random_2048",
+        "seed": 42
+      },
+      "evaluations": [
+        {
+          "name": "clean",
+          "dataset": "area_random_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_4096",
+          "dataset": "area_random_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_area_random_8192",
+          "dataset": "area_random_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_2048",
+          "dataset": "fps_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_4096",
+          "dataset": "fps_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_fps_8192",
+          "dataset": "fps_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_2048",
+          "dataset": "poisson_disk_2048",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_4096",
+          "dataset": "poisson_disk_4096",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "cross_poisson_disk_8192",
+          "dataset": "poisson_disk_8192",
+          "corruption": "clean",
+          "severity": 0
+        },
+        {
+          "name": "jitter_1",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 1
+        },
+        {
+          "name": "jitter_2",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 2
+        },
+        {
+          "name": "jitter_3",
+          "dataset": "area_random_2048",
+          "corruption": "jitter",
+          "severity": 3
+        },
+        {
+          "name": "rotation_1",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 1
+        },
+        {
+          "name": "rotation_2",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 2
+        },
+        {
+          "name": "rotation_3",
+          "dataset": "area_random_2048",
+          "corruption": "rotation",
+          "severity": 3
+        },
+        {
+          "name": "scale_1",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 1
+        },
+        {
+          "name": "scale_2",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 2
+        },
+        {
+          "name": "scale_3",
+          "dataset": "area_random_2048",
+          "corruption": "scale",
+          "severity": 3
+        },
+        {
+          "name": "translation_1",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 1
+        },
+        {
+          "name": "translation_2",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 2
+        },
+        {
+          "name": "translation_3",
+          "dataset": "area_random_2048",
+          "corruption": "translation",
+          "severity": 3
+        },
+        {
+          "name": "dropout_1",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 1
+        },
+        {
+          "name": "dropout_2",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 2
+        },
+        {
+          "name": "dropout_3",
+          "dataset": "area_random_2048",
+          "corruption": "dropout",
+          "severity": 3
+        },
+        {
+          "name": "outliers_1",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 1
+        },
+        {
+          "name": "outliers_2",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 2
+        },
+        {
+          "name": "outliers_3",
+          "dataset": "area_random_2048",
+          "corruption": "outliers",
+          "severity": 3
+        },
+        {
+          "name": "occlusion_1",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 1
+        },
+        {
+          "name": "occlusion_2",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 2
+        },
+        {
+          "name": "occlusion_3",
+          "dataset": "area_random_2048",
+          "corruption": "occlusion",
+          "severity": 3
+        },
+        {
+          "name": "permutation",
+          "dataset": "area_random_2048",
+          "corruption": "permutation",
+          "severity": 1
+        },
+        {
+          "name": "so3",
+          "dataset": "area_random_2048",
+          "corruption": "so3",
+          "severity": 1
+        }
+      ]
+    }
+  ],
+  "plan_sha256": "24f7fa1c548c8605fa81248685d04e32447812bfec634c3cc2f68697614b628e"
+}
