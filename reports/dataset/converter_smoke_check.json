@@ -1,0 +1,99 @@
+{
+  "platform": "macOS arm64",
+  "compiler": "clang++ -O3 -std=c++17 -dynamiclib -fPIC -ffp-contract=off",
+  "models": 1,
+  "files": 9,
+  "windows_hardware_validated": false,
+  "checks": [
+    {
+      "path": "area_random_2048/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        2048,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "area_random_4096/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        4096,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "area_random_8192/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        8192,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "fps_2048/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        2048,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "fps_4096/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        4096,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "fps_8192/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        8192,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "poisson_disk_2048/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        2048,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "poisson_disk_4096/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        4096,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    },
+    {
+      "path": "poisson_disk_8192/test/bearing/023bc2f1f8e78483f76592673915b3bee8abd0fb95521629315fcfea97dbeeb4.npy",
+      "shape": [
+        8192,
+        3
+      ],
+      "dtype": "float32",
+      "byte_identical": true,
+      "max_abs_coordinate_difference": 0.0
+    }
+  ]
+}

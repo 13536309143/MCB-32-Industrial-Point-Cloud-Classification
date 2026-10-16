@@ -45,11 +45,13 @@
 
 九套点云属于**同一批模型的不同表示**，不能当作 454,779 个独立样本重新划分。同一 ID 的所有表示必须留在同一集合。同一采样方法的三档点数满足集合嵌套关系，但保存时独立打乱行顺序；采样后不再单独居中或缩放。
 
-Hugging Face 发布准备采用带校验和的 TAR 分片，保留原始 NPY 字节，避免创建数十万个仓库条目。[数据卡](huggingface/README.zh-CN.md)说明类别、采样算法、文件结构和许可范围。目标数据仓库为 [GeorgeWJJ/PointNext](https://huggingface.co/datasets/GeorgeWJJ/PointNext)，分片可用性和哈希以仓库发布清单为准。
+Hugging Face 发布准备采用带校验和的 TAR 分片，保留原始 NPY 字节，避免创建数十万个仓库条目。[数据卡](huggingface/README.zh-CN.md)说明类别、采样算法、文件结构和许可范围。目标数据仓库为 [GeorgeWJJ/PointNext](https://huggingface.co/datasets/GeorgeWJJ/PointNext)，分片可用性和哈希以仓库发布清单为准。另有可选的全部 50,531 个整理后 OBJ 源网格；转换脚本、C++ 采样源码和 Windows BAT 同时保存在本仓库及 Hugging Face，详见[转换说明](huggingface/CONVERSION.md)。
 
 ```bash
 python -m pip install huggingface_hub numpy
 python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
+# Optional source OBJ meshes / 可选源网格：
+python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --meshes-only --output data
 ```
 
 ```text
@@ -79,7 +81,7 @@ label_name = path.parent.name
 ## 获取完整项目
 
 ```bash
-git -c url.https://github.com/.insteadOf=git@github.com: clone --recurse-submodules https://github.com/13536309143/pointnext.git
+git -c url.https://github.com/.insteadOf=git@github.com: clone --recurse-submodules https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification.git pointnext
 cd pointnext
 ```
 

@@ -1,6 +1,6 @@
 # MCB-32 工业零部件配对点云
 
-[English](README.md) | [简体中文](README.zh-CN.md) · [代码与报告](https://github.com/13536309143/pointnext)
+[English](README.md) | [简体中文](README.zh-CN.md) · [代码与报告](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification)
 
 ## 概况
 
@@ -8,7 +8,7 @@
 
 三种方法为按面积随机采样、贪心最远点采样（FPS）、泊松盘式样本消除，点数分别为 **2,048、4,096、8,192**。所有文件均为连续存储的 NumPy `float32`，形状 `(N,3)`，只含 XYZ，不含法线、颜色、物理尺寸、传感器测量或逐点标签。类别表达机械零部件类型，同时涉及形状和用途，不是材质或缺陷标签。
 
-本次分发九套点云；原始合并 OBJ 留在本地用于重新转换，不包含在点云归档中。
+本次分发九套点云，并通过独立的 `meshes/` 压缩分片提供全部 **50,531 个整理后的源 OBJ 网格**，其模型 ID、类别和原始划分与点云一一对应。`conversion/` 同时附有转换脚本、C++ 采样源码、Windows DLL 和一键 BAT，参见[转换说明](https://huggingface.co/datasets/GeorgeWJJ/PointNext/blob/main/conversion/README.md)。
 
 ![同一对象的九种配对点云](assets/sampling_preview.png)
 
@@ -59,7 +59,7 @@ python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
 
 默认 Hugging Face 缓存会在解压后保留 TAR。完整下载与解压建议预留约 55 GiB 空闲磁盘，训练输出另计。
 
-只下载一个版本可增加 `--variant area_random_2048`；完整实验需要九套。为复现准确版本可添加 `--revision <数据集提交号>`。程序核对分片 SHA-256、拒绝越界或链接类归档路径，恢复原始 NPY 目录；不下载原始网格。
+只下载一个版本可增加 `--variant area_random_2048`；完整实验需要九套。为复现准确版本可添加 `--revision <数据集提交号>`。程序核对分片 SHA-256、拒绝越界或链接类归档路径，恢复原始 NPY 目录；默认只下载点云。添加 `--include-meshes` 可同时恢复 `MCB_merged/`；使用 `--meshes-only` 则只下载 OBJ。网格使用无损 gzip 压缩，`mesh_release_manifest.json` 记录分片哈希，`metadata/mesh_file_manifest.csv.gz` 记录每个 OBJ 的哈希。网格解压另需约 8.3 GiB，加上压缩分片缓存空间。
 
 ```python
 from pathlib import Path
@@ -127,7 +127,7 @@ label = p.parent.name
 
 适合完整 CAD 表面的分类、配对采样/分辨率研究和人工扰动测试；不是实际扫描数据。尚不能代表真实设备噪声、任意姿态、离群点、遮挡或新 CAD 来源的泛化。32 类和保留模型数量属于本整理版。
 
-关联的**已完成实验只在面积随机 2,048 点上训练六个网络**，另外八套仅对相同留出对象做跨表示测试；仅一个训练种子。不能据此判断九种训练数据的最优方案。详细结果见 [中文报告](https://github.com/13536309143/pointnext/blob/main/docs/reports/KEY6.zh-CN.md)与[英文报告](https://github.com/13536309143/pointnext/blob/main/docs/reports/KEY6.md)。
+关联的**已完成实验只在面积随机 2,048 点上训练六个网络**，另外八套仅对相同留出对象做跨表示测试；仅一个训练种子。不能据此判断九种训练数据的最优方案。详细结果见 [中文报告](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification/blob/main/docs/reports/KEY6.zh-CN.md)与[英文报告](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification/blob/main/docs/reports/KEY6.md)。
 
 ## 来源、权利与引用
 
@@ -146,4 +146,4 @@ label = p.parent.name
 }
 ```
 
-整理与实验代码：[13536309143/pointnext](https://github.com/13536309143/pointnext)。本发布不代表原 MCB 或 PointNeXt 作者背书。
+整理与实验代码：[13536309143/MCB-32-Industrial-Point-Cloud-Classification](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification)。本发布不代表原 MCB 或 PointNeXt 作者背书。

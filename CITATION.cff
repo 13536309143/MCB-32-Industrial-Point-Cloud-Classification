@@ -4,7 +4,7 @@ title: "MCB-32: Reproducible Industrial Point Cloud Classification with PointNeX
 type: software
 authors:
   - name: "13536309143"
-repository-code: "https://github.com/13536309143/pointnext"
+repository-code: "https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification"
 url: "https://huggingface.co/datasets/GeorgeWJJ/PointNext"
 license: MIT
 date-released: 2026-10-16

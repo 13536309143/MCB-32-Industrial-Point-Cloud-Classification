@@ -18,7 +18,7 @@ tags:
 ---
 # MCB-32 Paired Industrial Point Clouds
 
-[English](README.md) | [简体中文](README.zh-CN.md) · [Code and reports](https://github.com/13536309143/pointnext)
+[English](README.md) | [简体中文](README.zh-CN.md) · [Code and reports](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification)
 
 ## Dataset summary
 
@@ -26,7 +26,7 @@ A research preparation of Mechanical Components Benchmark (MCB) assets for **who
 
 The release contains area-weighted random, greedy farthest-point and Poisson-disk-style samples at **2,048, 4,096 and 8,192 points**. Each file preserves a contiguous NumPy `float32` array of shape `(N,3)`, XYZ only. No color, normals, physical units, sensor measurements or point-wise labels are included. Labels describe component shape and function, not defects or materials.
 
-The source OBJ collection is retained locally for conversion and is not bundled into these point cloud archives.
+All **50,531 prepared source OBJ meshes** are also available as an optional, separately compressed `meshes/` collection. They preserve the same IDs, classes and partitions. Conversion sources and the Windows one-click wrapper are mirrored under `conversion/`; see [conversion instructions](https://huggingface.co/datasets/GeorgeWJJ/PointNext/blob/main/conversion/README.md).
 
 ![Nine paired representations of one object](assets/sampling_preview.png)
 
@@ -55,6 +55,10 @@ metadata/experiment_splits.csv.gz
 metadata/file_manifest.csv.gz
 release_manifest.json
 SHA256SUMS
+meshes/<train-or-test>-<shard>.tar.gz  # optional original OBJ meshes
+mesh_release_manifest.json
+metadata/mesh_file_manifest.csv.gz
+conversion/                          # converter, C++ source, Windows DLL and BAT
 ```
 
 Each archive restores paths of the form:
@@ -81,7 +85,7 @@ python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
 
 The default Hub download cache retains the TAR shards in addition to the extracted NPY files; allow approximately 55 GiB of free disk for the full download/extraction, plus space for training outputs.
 
-For a single representation, add `--variant area_random_2048`. The full experiment suite requires all nine. Supply `--revision <dataset-commit>` to pin the exact version. The downloader verifies archive SHA-256, rejects unsafe archive paths and restores the original directory structure. It does not download the source meshes.
+For a single representation, add `--variant area_random_2048`. The full experiment suite requires all nine. Supply `--revision <dataset-commit>` to pin the exact version. The downloader verifies archive SHA-256, rejects unsafe archive paths and restores the original directory structure. The default downloads only point clouds. Add `--include-meshes` to also restore the original `MCB_merged/`, or use `--meshes-only` to download just the OBJ collection. Mesh shards use lossless gzip compression; `mesh_release_manifest.json` and `metadata/mesh_file_manifest.csv.gz` provide archive and individual OBJ hashes. Allow extra cache and extraction space for meshes (about 8.3 GiB extracted, plus compressed downloads).
 
 ```python
 from pathlib import Path
@@ -150,7 +154,7 @@ The largest class, `screws_and_bolts`, contains 16,530 objects (32.71%). `flange
 
 Suitable for CAD surface classification, paired sampling/resolution studies and controlled synthetic corruption experiments. Inputs are ideal complete surfaces, not real scans. The release does not establish robustness to arbitrary poses, outliers, occlusion, sensor artifacts or unseen CAD sources. Labels merge several fine subtypes into broad component categories. The 32-class taxonomy and retained counts are specific to this preparation.
 
-The associated **completed** experiment trains six classifiers on `area_random_2048` only; the remaining variants are cross-representation tests on the same held-out objects. It is not a nine-training-dataset optimization study and has only one training seed. The [English report](https://github.com/13536309143/pointnext/blob/main/docs/reports/KEY6.md) and [Chinese report](https://github.com/13536309143/pointnext/blob/main/docs/reports/KEY6.zh-CN.md) provide measured results.
+The associated **completed** experiment trains six classifiers on `area_random_2048` only; the remaining variants are cross-representation tests on the same held-out objects. It is not a nine-training-dataset optimization study and has only one training seed. The [English report](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification/blob/main/docs/reports/KEY6.md) and [Chinese report](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification/blob/main/docs/reports/KEY6.zh-CN.md) provide measured results.
 
 ## Provenance, rights and citation
 
@@ -167,4 +171,4 @@ Original source: [stnoah1/mcb](https://github.com/stnoah1/mcb), introduced by Ki
 }
 ```
 
-Dataset preparation and experiment code: [13536309143/pointnext](https://github.com/13536309143/pointnext). This Hub repository is a derivative research distribution, not an endorsement by the original MCB or PointNeXt authors.
+Dataset preparation and experiment code: [13536309143/MCB-32-Industrial-Point-Cloud-Classification](https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification). This Hub repository is a derivative research distribution, not an endorsement by the original MCB or PointNeXt authors.

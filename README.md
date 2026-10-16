@@ -45,11 +45,13 @@ The derivative collection merges and reorganizes [MCB](https://github.com/stnoah
 
 These are nine views of the **same objects**, not 454,779 independent examples. Keep object identities in one partition across all representations. Point counts are nested as sets within each method; saved row order is independently shuffled. Point cloud samples are not re-centered or re-scaled after surface sampling.
 
-The Hugging Face release is prepared as checksummed TAR shards to preserve the original NPY files without creating hundreds of thousands of repository entries. The [dataset card](huggingface/README.md) documents the exact sampling implementation, all 32 classes, layout and licensing scope. Dataset repository: [GeorgeWJJ/PointNext](https://huggingface.co/datasets/GeorgeWJJ/PointNext). Archive availability and content hashes are recorded in its release manifest.
+The Hugging Face release is prepared as checksummed TAR shards to preserve the original NPY files without creating hundreds of thousands of repository entries. The [dataset card](huggingface/README.md) documents the exact sampling implementation, all 32 classes, layout and licensing scope. Dataset repository: [GeorgeWJJ/PointNext](https://huggingface.co/datasets/GeorgeWJJ/PointNext). Archive availability and content hashes are recorded in its release manifest. The optional source-mesh release preserves all 50,531 prepared OBJ inputs. Conversion scripts, C++ sampling source and a Windows BAT are included in this repository and mirrored on the Hub; see [conversion instructions](huggingface/CONVERSION.md).
 
 ```bash
 python -m pip install huggingface_hub numpy
 python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
+# Optional source OBJ meshes / 可选源网格：
+python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --meshes-only --output data
 ```
 
 ```text
@@ -79,7 +81,7 @@ The same held-out gear is shown with a fixed view and coordinate frame; rows var
 ## Get the complete project
 
 ```bash
-git -c url.https://github.com/.insteadOf=git@github.com: clone --recurse-submodules https://github.com/13536309143/pointnext.git
+git -c url.https://github.com/.insteadOf=git@github.com: clone --recurse-submodules https://github.com/13536309143/MCB-32-Industrial-Point-Cloud-Classification.git pointnext
 cd pointnext
 ```
 
