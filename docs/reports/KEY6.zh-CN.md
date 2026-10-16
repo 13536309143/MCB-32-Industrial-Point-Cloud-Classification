@@ -22,6 +22,10 @@ S 使用官方 ModelNet 分类编码器配置；B/L/XL 使用官方 S3DIS 编码
 
 **当前只在一种点云上训练。其余八套用于同一模型 ID 的跨表示测试，不能得出“九种训练数据谁最好”或“最佳超参数”的结论。** 跨表示稳定性也不等于跨数据源、跨设备或真实扫描泛化。
 
+![九套配对点云示例](../assets/sampling_preview.png)
+
+同一个留出 gear 模型在固定视角下的九种表示。示例按文件名确定，不根据识别正确与否挑选；仅说明数据对应关系，不是分类结果图。
+
 ## 2. 干净测试集分类效果
 
 | 模型 | OA % | mAcc % | Macro F1 % | Loss | NLL | 最佳轮次 |
@@ -177,7 +181,7 @@ python -m pip install -r scripts/requirements-release.txt
 python scripts/build_publication.py
 ```
 
-重建公开图表不需要本地完整备份，但预测级核验需要原 NPZ。CSV 指标采用 0–1 比例，报告显示为百分数；分析轮次按 1 开始，原始 epoch 按 0 开始。准确的数据、划分指纹及环境信息在 `reports/key6/protocol/`。独立 GPU 重复运行可能因 CUDA 原子操作无法逐位相同。
+重建六组指标图表不需要本地完整备份；点云数据对照图另需下载的数据及 `scripts/plot_sampling_preview.py`。预测级核验需要原 NPZ。CSV 指标采用 0–1 比例，报告显示为百分数；分析轮次按 1 开始，原始 epoch 按 0 开始。准确的数据、划分指纹及环境信息在 `reports/key6/protocol/`。独立 GPU 重复运行可能因 CUDA 原子操作无法逐位相同。
 
 云端复制未携带 Git 目录，因此原环境中记录提交号的探测失败。另行按套件算法核对固定提交工作区的 **148 个源文件**，内容指纹与云端实验记录完全一致，证明见 [source_verification.json](../../reports/key6/protocol/source_verification.json)；保留原环境记录，不改写历史证据。
 

@@ -1,4 +1,5 @@
 ---
+viewer: false
 pretty_name: MCB-32 Paired Industrial Point Clouds
 language:
 - en
@@ -26,6 +27,10 @@ A research preparation of Mechanical Components Benchmark (MCB) assets for **who
 The release contains area-weighted random, greedy farthest-point and Poisson-disk-style samples at **2,048, 4,096 and 8,192 points**. Each file preserves a contiguous NumPy `float32` array of shape `(N,3)`, XYZ only. No color, normals, physical units, sensor measurements or point-wise labels are included. Labels describe component shape and function, not defects or materials.
 
 The source OBJ collection is retained locally for conversion and is not bundled into these point cloud archives.
+
+![Nine paired representations of one object](assets/sampling_preview.png)
+
+The same held-out gear is shown with a fixed camera and coordinate frame. This is a data illustration, not a classification success example. The tabular dataset viewer is disabled because this release contains original NPY files in TAR shards; use the verified downloader below.
 
 ## Files and partitions
 
@@ -73,6 +78,8 @@ From a recursive clone of the experiment repository:
 python -m pip install huggingface_hub numpy
 python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
 ```
+
+The default Hub download cache retains the TAR shards in addition to the extracted NPY files; allow approximately 55 GiB of free disk for the full download/extraction, plus space for training outputs.
 
 For a single representation, add `--variant area_random_2048`. The full experiment suite requires all nine. Supply `--revision <dataset-commit>` to pin the exact version. The downloader verifies archive SHA-256, rejects unsafe archive paths and restores the original directory structure. It does not download the source meshes.
 

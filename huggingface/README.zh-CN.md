@@ -10,6 +10,10 @@
 
 本次分发九套点云；原始合并 OBJ 留在本地用于重新转换，不包含在点云归档中。
 
+![同一对象的九种配对点云](assets/sampling_preview.png)
+
+同一个留出 gear，使用固定视角与坐标系，仅展示数据，不是识别成功案例。本发布为原始 NPY 的 TAR 分片，已关闭不适用的表格预览；请按下面的方法下载与校验。
+
 ## 数量与文件
 
 每套原始 train/test 为 **40,424 / 10,107**；对应已完成实验的 train/val/test 为 **36,380 / 4,044 / 10,107**。共 454,779 个 NPY，逻辑字节数 **26,137,058,688（24.34 GiB）**。
@@ -52,6 +56,8 @@ MCB_pointcloud/<variant>/test/<class>/<model_id>.npy
 python -m pip install huggingface_hub numpy
 python scripts/download_dataset.py --repo-id GeorgeWJJ/PointNext --output data
 ```
+
+默认 Hugging Face 缓存会在解压后保留 TAR。完整下载与解压建议预留约 55 GiB 空闲磁盘，训练输出另计。
 
 只下载一个版本可增加 `--variant area_random_2048`；完整实验需要九套。为复现准确版本可添加 `--revision <数据集提交号>`。程序核对分片 SHA-256、拒绝越界或链接类归档路径，恢复原始 NPY 目录；不下载原始网格。
 

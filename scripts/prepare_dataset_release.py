@@ -48,6 +48,8 @@ def main():
     meta=output/'metadata';meta.mkdir(exist_ok=True)
     for name in ['README.md','README.zh-CN.md']:
         shutil.copy2(ROOT/'huggingface'/name,output/name)
+    if (ROOT/'huggingface/assets').is_dir():
+        shutil.copytree(ROOT/'huggingface/assets',output/'assets',dirs_exist_ok=True)
     shutil.copy2(ROOT/'THIRD_PARTY_NOTICES.md',output/'THIRD_PARTY_NOTICES.md')
     for source,target in [('class_to_idx.json','class_to_idx.json')]:
         shutil.copy2(args.index_dir/source,meta/target)

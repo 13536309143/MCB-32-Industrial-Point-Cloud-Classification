@@ -72,6 +72,10 @@ label_name = path.parent.name
 
 For the completed run, validation is derived only from the original training partition using split seed `20261013`. Model selection never uses test scores. Exact fingerprints are versioned in [data_binding.json](reports/key6/protocol/data_binding.json).
 
+![Nine paired representations of one held-out gear](docs/assets/sampling_preview.png)
+
+The same held-out gear is shown with a fixed view and coordinate frame; rows vary the sampling method and columns vary point count. This illustrates the paired data, not a classification result. Rebuild with `python scripts/plot_sampling_preview.py` after downloading the data.
+
 ## Get the complete project
 
 ```bash

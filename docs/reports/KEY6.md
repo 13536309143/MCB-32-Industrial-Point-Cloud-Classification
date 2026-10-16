@@ -29,6 +29,10 @@ split_sha256 a1f4dbb8bf7a612d7e9b76688a116cf97b03b2c3fce890e0e83c7e29676f2a27
 
 These fingerprint an ordered data inventory and split definition, respectively; they are not the content hash of a single archive. The exact original fields are versioned in [data_binding.json](../../reports/key6/protocol/data_binding.json).
 
+![Paired sampling illustration](../assets/sampling_preview.png)
+
+**Data illustration.** One held-out gear, with identical camera and coordinates across all nine representations. This is a fixed data example, not an accuracy-selected success case. `scripts/plot_sampling_preview.py` records the deterministic example selection.
+
 ## 3. Models, training and selection
 
 All runs use seed 42, 300 epochs, AdamW, learning rate 0.001, weight decay 0.05, effective batch 32, 10-epoch warmup and cosine decay to 1e-6. Label smoothing is 0.1, classifier dropout 0.5, and gradient norm clipping 1.0. Four data workers are used. Training augments point order, independent-axis scale in [0.8,1.25], and coordinate translation in [-0.1,0.1]; **no rotation, jitter, outlier or occlusion augmentation** is included. Test corruptions are therefore deliberate distribution shifts. Each epoch drops the incomplete final training batch (28 objects); shuffled ordering changes which objects are omitted.
@@ -195,7 +199,7 @@ python -m pip install -r scripts/requirements-release.txt
 python scripts/build_publication.py
 ```
 
-It verifies the archive and recorded confusion-matrix metrics, then rebuilds six PNG/SVG figures using no GPU. Prediction-level checks require the separately retained NPZ backup. CSV metrics use 0–1 ratios; report percentages multiply by 100. Report epochs are one-based, while original epoch files use zero-based indices. Full training instructions and version pins are in the [English README](../../README.md).
+It verifies the archive and recorded confusion-matrix metrics, then rebuilds six PNG/SVG figures using no GPU. The separate paired-data illustration additionally requires the downloaded point clouds and `scripts/plot_sampling_preview.py`. Prediction-level checks require the separately retained NPZ backup. CSV metrics use 0–1 ratios; report percentages multiply by 100. Report epochs are one-based, while original epoch files use zero-based indices. Full training instructions and version pins are in the [English README](../../README.md).
 
 The cloud copy excluded Git metadata, so the original environment's upstream `git rev-parse` probes failed. Separately, all **148 files** covered by the suite's code-fingerprint algorithm in the pinned local source match the recorded cloud fingerprint exactly. This distinction is recorded in [source_verification.json](../../reports/key6/protocol/source_verification.json); the original environment evidence is not rewritten.
 

@@ -72,6 +72,10 @@ label_name = path.parent.name
 
 验证集仅从原训练集中按类划出，split seed 为 `20261013`，测试集不参与模型选择。数据及划分指纹见 [data_binding.json](reports/key6/protocol/data_binding.json)。
 
+![同一留出零件的九套配对点云](docs/assets/sampling_preview.png)
+
+图中使用同一个留出 gear 模型和固定视角，行表示采样方法，列表示点数；这里只展示数据对应关系，不代表分类结果。下载数据后可用 `python scripts/plot_sampling_preview.py` 重建。
+
 ## 获取完整项目
 
 ```bash
